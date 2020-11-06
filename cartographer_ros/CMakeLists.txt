@@ -58,6 +58,7 @@ include(FindPkgConfig)
 find_package(absl REQUIRED)
 find_package(LuaGoogle REQUIRED)
 find_package(Eigen3 REQUIRED)
+find_package(lcm REQUIRED)
 
 find_package(urdfdom_headers REQUIRED)
 if(DEFINED urdfdom_headers_VERSION)
@@ -124,6 +125,11 @@ endforeach()
 # Eigen
 target_include_directories(${PROJECT_NAME} SYSTEM PUBLIC
   "${EIGEN3_INCLUDE_DIR}")
+
+# lcm
+target_include_directories(${PROJECT_NAME} SYSTEM PUBLIC
+"${LCM_USE_FILE}")
+target_link_libraries(${PROJECT_NAME} PUBLIC lcm)
 
 # Boost
 target_include_directories(${PROJECT_NAME} SYSTEM PUBLIC

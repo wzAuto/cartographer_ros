@@ -12,6 +12,28 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+google_binary(metrics_client
+  SRCS
+  metrics_client.cpp
+)
+
+install(TARGETS metrics_client
+  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+google_binary(odometer_publisher
+  SRCS
+  odometer_publisher.cpp
+)
+
+install(TARGETS odometer_publisher
+  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 google_binary(cartographer_assets_writer
   SRCS
     assets_writer_main.cc

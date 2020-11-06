@@ -1,0 +1,22 @@
+package position;
+
+//version 1.0
+struct pose_2d
+{
+    
+    //unit second
+    double timestamp;
+    //uint meter
+    double x;
+    //uint meter
+    double y;
+    //uint degree [0,360)
+    double heading;
+
+    //dimensionless quantities [0, 100]
+    int32_t confidence_x;
+    //dimensionless quantities [0, 100]
+    int32_t confidence_y;
+    //dimensionless quantities [0, 100]
+    int32_t confidence_heading;
+}

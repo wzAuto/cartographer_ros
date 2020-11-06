@@ -60,6 +60,7 @@ void FamilyFactory::ReadMetrics(
   for (const auto& gauge_family : gauge_families_) {
     response->metric_families.push_back(gauge_family->ToRosMessage());
   }
+
   for (const auto& histogram_family : histogram_families_) {
     response->metric_families.push_back(histogram_family->ToRosMessage());
   }

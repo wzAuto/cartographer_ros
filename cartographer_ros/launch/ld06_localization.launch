@@ -43,5 +43,5 @@ to add a rosbag file.
   <node name="rviz" pkg="rviz" type="rviz" required="true"
       args="-d $(find cartographer_ros)/configuration_files/localization_2d.rviz" />
 
-  <node name="odometer_publisher" pkg="cartographer_ros" type="odometer_publisher" output="screen"/>
+  <node name="lidar_pose_2d_publish" pkg="cartographer_ros" type="lidar_pose_2d_publish" output="screen"/>
 </launch>

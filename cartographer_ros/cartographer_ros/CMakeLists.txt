@@ -23,12 +23,12 @@ install(TARGETS metrics_client
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
-google_binary(odometer_publisher
+google_binary(lidar_pose_2d_publish
   SRCS
-  odometer_publisher.cpp
+  lidar_pose_2d_publish.cpp
 )
 
-install(TARGETS odometer_publisher
+install(TARGETS lidar_pose_2d_publish
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}

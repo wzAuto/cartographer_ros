@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /Submaps1/Submaps1
       Splitter Ratio: 0.6006709933280945
-    Tree Height: 728
+    Tree Height: 363
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -124,28 +124,47 @@ Visualization Manager:
           Submap Pose Markers: false
           Value: true
         Trajectory 1:
-          0.70: false
-          1.70: false
-          10.70: false
-          11.70: false
-          12.70: false
-          13.70: false
-          14.70: false
-          15.70: false
-          16.70: false
-          17.70: false
-          18.70: false
-          19.35: false
-          2.70: false
-          3.70: false
-          4.70: false
-          5.70: false
-          6.70: false
-          7.70: false
-          8.70: false
-          9.70: false
+          0.70: true
+          1.70: true
+          10.70: true
+          11.70: true
+          12.70: true
+          13.70: true
+          14.70: true
+          15.70: true
+          16.70: true
+          17.70: true
+          18.70: true
+          19.70: true
+          2.70: true
+          20.70: true
+          21.70: true
+          22.70: true
+          23.70: true
+          24.70: true
+          25.70: true
+          26.70: true
+          27.70: true
+          28.70: true
+          29.70: true
+          3.70: true
+          30.70: true
+          31.70: true
+          32.70: true
+          33.70: true
+          34.70: true
+          35.70: true
+          36.70: true
+          37.45: true
+          38.10: true
+          4.70: true
+          5.70: true
+          6.70: true
+          7.70: true
+          8.70: true
+          9.70: true
           Submap Pose Markers: false
-          Value: false
+          Value: true
       Topic: /submap_list
       Tracking frame: base_link
       Unreliable: false
